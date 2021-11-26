@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <title>Cambio</title>
+</head>
+<body>
+    <main>
+    <h1>Calculadora Monetaria</h1>
+    <div id="calculadora">
+        Ingrese su monto en pesos <input type="number" name="pesos" id="pesos" />
+        <article id="article-calculadora">
+        <form action="">
+            <label for="tipo-moneda">Selecione su moneda</label>
+            <select name="moneda" id="moneda">
+                <option value="euro">Euro</option>
+                <option value="dolar">Dolar</option>
+            </select>
+            <button
+                type="button"
+                onclick="calcular()"
+                >Calcular
+            </button>
+        </form>
+        <h3></h3>
+    </main>
+    <hr>
+    <div id="agregar-monedas">
+        <h1>Agregar monedas</h1>
+        <form action="">
+            <input type="text" id="nombre" placeholder="Moneda"/>
+            <input type="number" id="valor" placeholder="Valor" />
+            <button type="button" id="nuevaMoneda" onclick="addMoneda()">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>
